@@ -1,0 +1,21 @@
+from typing import List # this is used to add type hints for List type
+
+def find_index(nums: List[int], target: int) -> int:
+    # #non challenge answer
+    # length = len(nums)
+    # for i in range(length):
+    #     if (nums[i] == target):
+    #         ## returns the index of the target
+    #         return nums.index(target)
+
+    length = len(nums)
+    for i in range(length):
+        if (nums[i] == target):
+            return i
+
+# don't modify code below this line
+print(find_index([1, 2, 3, 4, 5], 3))
+print(find_index([1, 2, 3, 4, 5, 3], 3))
+print(find_index([1, 2, 3, 4], 1))
+print(find_index([1, 3, 4, 2], 2))
+
